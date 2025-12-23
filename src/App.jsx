@@ -351,7 +351,7 @@ const App = () => {
             <div>
               <h5 className="text-sm font-sans tracking-[0.2em] mb-6 text-yellow-500 uppercase">Contact</h5>
               <ul className="space-y-3 font-sans text-sm">
-                <li className="text-gray-400">marketing@zahirdamaso.com</li>
+                <li className="text-gray-400">marketing@madre.com</li>
                 <li className="text-gray-400">+971 42 564 306</li>
               </ul>
             </div>
