@@ -133,7 +133,11 @@ const App = () => {
             className="absolute inset-0 w-full h-full object-cover"
             onLoadedData={() => setVideoLoaded(true)}
           >
-            <source src="../src/assets/8087659-uhd_4096_2160_24fps.mp4" type="video/mp4" />
+            <source
+            src="https://res.cloudinary.com/dlpym1qdy/video/upload/v1766402327/8087659-uhd_4096_2160_24fps_dzgqtx.mp4"
+            type="video/mp4"
+            />
+
            
           </video>
           {/* Fallback gradient if video doesn't load */}
@@ -269,7 +273,7 @@ const App = () => {
             className="absolute inset-0 w-full h-full object-cover"
             onLoadedData={() => setVideoLoaded(true)}
           >
-            <source src="../src/assets/7308238-hd_1080_1920_24fps.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dlpym1qdy/video/upload/v1766402315/7308238-hd_1080_1920_24fps_tp2hw0.mp4" type="video/mp4" />
            
           </video>
                   </div>
