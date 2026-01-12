@@ -1,1 +1,55 @@
 @import "tailwindcss";
+
+@layer components {
+  /* Fonts */
+  .font-display { font-family: 'Playfair Display', serif; }
+  .font-garamond { font-family: 'Cormorant Garamond', serif; }
+  .font-sans { font-family: 'Montserrat', sans-serif; }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent
+           bg-gradient-to-r
+           from-[#d4af37] via-[#f4e5c2] to-[#d4af37];
+  }
+
+  /* Glass effect */
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-lg
+           border border-yellow-500/20;
+  }
+
+  /* Shimmer overlay */
+  .shimmer {
+    @apply absolute inset-0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(212, 175, 55, 0.3),
+      transparent
+    );
+    animation: shimmer 3s infinite;
+  }
+}
+
+/* Animations & globals are OUTSIDE @layer */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 10px;
+}
